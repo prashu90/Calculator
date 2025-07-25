@@ -1,0 +1,80 @@
+body {
+    background: #f4f6f8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #fff;
+    max-width: 350px;
+    margin: 60px auto;
+    padding: 30px 25px 25px 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+h1 {
+    color: #1976d2;
+    margin-bottom: 18px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+input.type {
+    width: 90%;
+    padding: 12px 10px;
+    margin-bottom: 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1.2em;
+    text-align: right;
+    background: #f9f9f9;
+    color: #333;
+    outline: none;
+    transition: border 0.2s;
+}
+input.type:focus {
+    border: 2px solid #1976d2;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.buttons button {
+    padding: 16px 0;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    background: #e3eafc;
+    color: #1976d2;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.04);
+}
+
+.buttons button:hover {
+    background: #1976d2;
+    color: #fff;
+}
+
+.buttons button[type="button"][onclick*='reset'] {
+    background: #f44336;
+    color: #fff;
+}
+.buttons button[type="button"][onclick*='reset']:hover {
+    background: #b71c1c;
+}
+
+.buttons button[type="button"][onclick*='display'] {
+    background: #43a047;
+    color: #fff;
+}
+.buttons button[type="button"][onclick*='display']:hover {
+    background: #1b5e20;
+}
